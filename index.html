@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Challenge Oracle ONE Encriptador de Texto</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="appPage">
-        <div class="logo">
-            <img src="./src/img/Vector.svg" alt="logo">
+      <div class="logo">
+        <img src="./src/img/Vector.svg" alt="logo" />
+      </div>
+      <div class="inputMensaje">
+        <textarea name="" id="textToRead" cols="1" rows="10"></textarea>
+        <p><span>i</span> Solo letras minusculas y sin acentos</p>
+        <div class="botones">
+          <button id="botonEncriptar">Encriptar</button>
+          <button>Desencriptar</button>
         </div>
-        <div class="inputMensaje">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
+      </div>
+      <div class="mensajeEncriptadoBox">
+        <div id="mensajeEncriptado">
+          <textarea
+            name="encriptado"
+            id="textResult"
+            cols="1"
+            rows="10"
+            class="textoEncriptado"
+          ></textarea>
+          <button class="copiar">copiar</button>
         </div>
-        <div class="mensajeEncriptado">
-
-            <button class="copiar">copiar</button>
+        <div id="noMensaje">
+          <img src="./src/img/Muñeco.svg" alt="muñeco" />
+          <h3>Ningun mensaje fue encontrado</h3>
+          <p>Ingresa el texto que desees encriptar o desencriptar</p>
         </div>
-
-
+      </div>
     </section>
-</body>
+    <footer>
+      <p>Desarrollado por Andres Rubio para Oracle ONE - Allura</p>
+    </footer>
+  </body>
+
+  <script src="./encriptador.js"></script>
 </html>

@@ -1,35 +1,86 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #F3F5FC;
 }
 
-.appPage{
-    width: 100vw;
+body {
     height: 100vh;
+    width: 100vw;
+}
+
+.appPage {
+    width: 100vw;
     display: flex;
 
 }
 
-.logo{
-    margin:  0 40px;
+.logo {
+    margin: 0 40px;
     height: 100%;
 }
 
-.logo img{
+.logo img {
     margin: 40px
 }
 
-.inputMensaje{
-    margin:  0 40px;
+.inputMensaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 0 40px;
     width: 680px;
     height: 100%;
 
 }
 
-.mensajeEncriptado{
-    margin:  0 40px;
-    height: 100%;
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
 
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+}
+
+.botonEncriptar {
+    color: white;
+    background: #0A3871;
+
+}
+
+.mensajeEncriptadoBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textoEncriptado {
+    width: 400px;
+/* height: 944px; */
+    left: 1000px;
+    top: 40px;
+}
+
+.noMensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mensajeEncriptado {
+    display: none;
+    flex-direction: column;
+    align-items: center;
 }
